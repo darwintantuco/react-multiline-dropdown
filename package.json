@@ -1,6 +1,6 @@
 {
   "name": "react-multiline-dropdown",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Custom dropdown with multiline options",
   "main": "build/index.js",
   "scripts": {
