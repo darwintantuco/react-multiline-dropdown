@@ -6,7 +6,9 @@
   "scripts": {
     "build": "babel lib -d build",
     "build:watch": "babel lib -w -d build",
-    "lint": "eslint lib/**; exit 0",
+    "lint:js": "eslint lib/**",
+    "prettier:check": "prettier-eslint --list-different 'lib/**/*.js' 'styles/**/*.scss'",
+    "prettier:fix": "prettier-eslint --write 'lib/**/*.js' 'styles/**/*.scss'",
     "lint:watch": "esw -w lib/**",
     "prepublish": "yarn run build"
   },
@@ -22,17 +24,14 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
-    "babel-eslint": "^8.2.2",
+    "babel-eslint": "10.0.1",
     "babel-preset-latest": "^6.24.1",
     "babel-preset-react": "^6.24.1",
-    "eslint": "^4.19.1",
-    "eslint-plugin-import": "^2.10.0",
-    "eslint-plugin-jsx-a11y": "^6.0.3",
-    "eslint-plugin-react": "^7.7.0",
-    "eslint-watch": "^3.1.4",
+    "prettier-eslint-cli": "4.7.1",
     "prop-types": "^15.6.1",
     "react": "^16.3.0",
-    "react-dom": "^16.3.0"
+    "react-dom": "^16.3.0",
+    "standard": "12.0.1"
   },
   "dependencies": {
     "styled-components": "^3.2.5"
