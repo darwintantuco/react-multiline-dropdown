@@ -16,8 +16,7 @@
     "react",
     "component",
     "select",
-    "dropdown",
-    "multiline"
+    "dropdown"
   ],
   "author": "darwin christopher tantuco",
   "license": "MIT",
